@@ -1,0 +1,37 @@
+body {
+ margin-top: 75px;
+ background-color: transparent;
+ font-size: .8em;
+}
+
+.fixed-header {
+ z-index: 900;
+ width: 100%;
+ position: fixed;
+ background: rgba(0, 0, 0, .85);
+ padding: 10px 0;
+ color: #fff;
+ top: 0;
+ border-bottom: 1px solid rgba(135, 206, 250, .65);
+ -moz-box-shadow: 0 0 10px #111;
+ -webkit-box-shadow: 0 0 10px #111;
+ box-shadow: 0 0 10px #111;
+}
+
+.fixed-header .brand {
+ display: inline-block;
+ width: 125px;
+}
+
+.fixed-header .menu-links {
+ display: inline-block;
+}
+
+.fixed-header .menu-links a {
+ padding: 0 8px;
+}
+
+.fixed-header a {
+ color: #fff;
+ text-decoration: none;
+}
