@@ -3,8 +3,7 @@ component {
 
  function spider(required string href) {
   var meta = {};
-  var ua = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36";
-  cfhttp(url = href, useragent = ua);
+  cfhttp(url = href);
   var jsDoc = jSoup.parse(cfhttp.fileContent);
   var el = jsDoc.select("meta");
   var filtered = el.filter(function(its){
