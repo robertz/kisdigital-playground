@@ -1,0 +1,36 @@
+{
+    "name":"My ColdBox App",
+    "version":"1.0.0",
+    "author":"You",
+    "location":"",
+    "slug":"my-coldbox-app",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":"",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "url":""
+    },
+    "bugs":"",
+    "shortDescription":"",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^3.0.0",
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*",
+        "commandbox-cfformat":"*"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/",
+        "testbox":"testbox/",
+        "cbjsoup":"modules/cbjsoup/"
+    },
+    "dependencies":{
+        "coldbox":"^5.0.0",
+        "cbjsoup":"^1.0.1"
+    },
+    "scripts":{}
+}
