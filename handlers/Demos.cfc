@@ -10,7 +10,7 @@ component extends="coldbox.system.EventHandler" {
   prc['url'] = event.getValue("url", "");
   prc['data'] = {};
   if (prc.url.len()) {
-   prc.data.append(SpiderService.spider(href = prc.url));
+   prc.data.append(SpiderService.spider(linkUrl = prc.url));
   }
   event.setView('demos/spider');
  }
