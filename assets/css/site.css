@@ -35,3 +35,10 @@ body {
  color: #fff;
  text-decoration: none;
 }
+
+/* bootstrap modifiers */
+
+.card-img-top {
+ height: 175px;
+ object-fit: cover;
+}
