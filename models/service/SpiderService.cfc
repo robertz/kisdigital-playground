@@ -16,6 +16,7 @@ component {
   filtered.each(function(i){
    len(i.attr("name")) ? meta[i.attr("name")] = i.attr("content") : meta[i.attr("property")] = i.attr("content");
   });
+  writeLog(text="Adding metadata for url " & linkUrl , type = "information", file = "links");
   return meta;
  }
 }

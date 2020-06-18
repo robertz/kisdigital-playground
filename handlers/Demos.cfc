@@ -1,6 +1,7 @@
 component extends="coldbox.system.EventHandler" {
 
  property name="SpiderService" inject="model";
+ property name="LogService" inject="model";
 
  function index (event, rc, prc) {
   event.setView('demos/index');
@@ -34,6 +35,12 @@ component extends="coldbox.system.EventHandler" {
   }
   prc.feed.append(application.feed, true);
   event.setView('demos/feed');
+ }
+
+ function readLog (event, rc, prc) {
+  prc['logFile'] = "https://raw.githubusercontent.com/robertz/payloads/master/links.log";
+  prc['logs'] = LogService.readLogfile({logfile: prc.logFile}).response.log;
+  event.setView('demos/logs');
  }
 
 }
