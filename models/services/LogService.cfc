@@ -43,13 +43,13 @@ component {
       'date': dt,
       'time': tm,
       'message': encodeForHTML(tmp),
-      'utc': DateDiff("s", "January 1 1970 00:00", DateConvert("Local2utc", parseDateTime(dt & " " & tm)))
+      'epoch': DateDiff("s", "January 1 1970 00:00", DateConvert("Local2utc", parseDateTime(dt & " " & tm)))
      });
     }
    }
    arraySort(lines, function(e1, e2){
     // descending sort by utc timestamp
-    return compare(e2.utc, e1.utc);
+    return compare(e2.epoch, e1.epoch);
    });
    // merge in to response.log
    data.response.log.append(lines, true);
